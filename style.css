@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+
+body {
+  /* background-image: linear-gradient(to top, #57090f 0%, #e77586 100%); */
+  background-image: url(hell.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: "DotGothic16", sans-serif;
+}
+body::selection {
+  color: red;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 97vh;
+}
+
+.title {
+  margin: -10rem 0 10rem 0;
+  font-size: 45px;
+  text-shadow: 2px 2px #ff0000;
+}
+
+::selection {
+  color: red;
+  background-color: black;
+}
+
+#text-here {
+  height: 30rem;
+  width: 60rem;
+  font-size: 40px;
+  margin-bottom: 3rem;
+  background-image: url("fire.png");
+  background-size: 100% 100%;
+  color: white;
+  font-family: "DotGothic16", sans-serif;
+}
+
+#text-here::placeholder {
+  text-align: center;
+  padding-top: 5rem;
+  color: white;
+  opacity: 0.5;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 60rem;
+}
+.button-down {
+  box-shadow: 5px 5px 5px 1px #black;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(34, 34, 34, 1) 100%
+  );
+  border-radius: 3px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 25px;
+  padding: 6px 12px;
+  font-family: "DotGothic16", sans-serif;
+}
