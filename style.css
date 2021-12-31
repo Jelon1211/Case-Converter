@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   font-family: "DotGothic16", sans-serif;
+  overflow: hidden;
 }
 body::selection {
   color: red;
@@ -20,9 +21,10 @@ body::selection {
 }
 
 .title {
-  margin: -10rem 0 10rem 0;
+  margin: 0rem 0 3rem 0;
   font-size: 45px;
   text-shadow: 2px 2px #ff0000;
+  color: rgb(0, 0, 0);
 }
 
 ::selection {
@@ -35,7 +37,8 @@ body::selection {
   width: 60rem;
   font-size: 40px;
   margin-bottom: 3rem;
-  background-image: url("fire.png");
+  /* background-image: url("fire.png"); */
+  background-color: rgb(0, 0, 0);
   background-size: 100% 100%;
   color: white;
   font-family: "DotGothic16", sans-serif;
@@ -68,4 +71,16 @@ body::selection {
   font-size: 25px;
   padding: 6px 12px;
   font-family: "DotGothic16", sans-serif;
+}
+
+.button-down:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(34, 34, 34, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.button-down:active {
+  position: relative;
+  bottom: 2px;
 }
