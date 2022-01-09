@@ -130,8 +130,11 @@ body::selection {
     font-size: 55px;
   }
   #gif {
-    top: 76%;
-    left: 50%;
+    position: absolute;
+    left: 40rem;
+    top: 110rem;
+    height: 300px;
+    width: 300px;
   }
   span {
     font-size: 40px;
