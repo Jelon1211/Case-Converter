@@ -32,7 +32,7 @@ body::selection {
   background-color: black;
 }
 
-.text-area {
+/* .text-area {
   margin: 3rem 0 0 0;
   background-color: black;
   width: 105%;
@@ -42,7 +42,7 @@ body::selection {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 #text-here {
   height: 23rem;
@@ -56,7 +56,7 @@ body::selection {
   resize: none;
   outline-style: none;
   border: none;
-  transform: skewY(6deg);
+  /* transform: skewY(6deg); */
   z-index: 999;
 }
 
@@ -106,4 +106,34 @@ body::selection {
   position: fixed;
   top: 40%;
   left: 75%;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    background-image: url(hell-mobile.jpg);
+    height: 100vh;
+  }
+  .title {
+    font-size: 66px;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+  #text-here::placeholder {
+    font-size: 70px;
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .button-down {
+    font-size: 55px;
+  }
+  #gif {
+    top: 76%;
+    left: 50%;
+  }
+  span {
+    font-size: 40px;
+  }
 }
